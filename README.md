@@ -51,5 +51,10 @@ Adicionar no começo dos conteúdos dentro dos arquivos;
 			<p><?php esc_html_e(‘Sorry, no posts matched your criteria. ’); ?></p>
 	<?php endif; ?>
 
+Utilizando o Advanced Custom fields no wordPress
+#instalar o plugin 
+#acessar os campos personalizados e adicionar as partes que iram ser usadas via CMS
+#Adicionar no paragrafos e textos <?php the_field('titulo_historia') ?> e depois retira-los deixando-os somente no wordpress
+
 
 
