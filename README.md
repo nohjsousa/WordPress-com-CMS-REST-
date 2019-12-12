@@ -38,3 +38,6 @@ A página índex.php deve estar reservada para conteúdo genérico.
 Adicionar o nome Page- na frente de cada template de página para facilitar a organização.
 Adicionar no começo dos conteúdos dentro dos arquivos;
 <?php //Tamplete Name:Sobre ?>
+
+#Abrir o WordPress e editar as páginas criadas para;
+	Modelo: "Nome da própria página"
