@@ -41,3 +41,14 @@ Adicionar no começo dos conteúdos dentro dos arquivos;
 
 #Abrir o WordPress e editar as páginas criadas para;
 	Modelo: "Nome da própria página"
+	
+#Adicionar o Loop
+	Adicionar o Loop nas páginas e ao index.php
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php the_title(); ?>
+		<?php the_content(); ?>
+		<?php endwhile; else : ?>
+			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	<?php endif; ?>
+
+
