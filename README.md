@@ -32,3 +32,9 @@
 #Adicionar o HEAD do wordPress no head.php e no footer.php
 	<?php wp_head(); ?>
 	<?php wp_footer();?>
+
+#Transformar as páginas em HTML, em templates de páginas
+A página índex.php deve estar reservada para conteúdo genérico.
+Adicionar o nome Page- na frente de cada template de página para facilitar a organização.
+Adicionar no começo dos conteúdos dentro dos arquivos;
+<?php //Tamplete Name:Sobre ?>
