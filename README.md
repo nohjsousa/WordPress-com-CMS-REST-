@@ -73,4 +73,7 @@ The_sub_field(‘nomedocampo’);
 #Terminar de adicionar os outros campos o CMS “contato”
 <?php echo date("Y"); ?> (Mostrar o ano que está atualmente nos direitos reservados “footer” )
 
+#Adicionar campos para SEO
+<title><?php bloginfo('name'); ?> - <?php wp_title(''); ?> <?php the_field('title_seo'); ?></title>
+<meta name="description" content="<?php bloginfo('name'); ?> - <?php wp_title(''); ?> <?php the_field('description_seo'); ?>">
 
