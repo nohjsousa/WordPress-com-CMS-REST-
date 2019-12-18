@@ -6,8 +6,8 @@
 					<li><a href="/testewp.local/contato">Contato</a></li>
 				</ul>
 			</nav>
-
-			<p>Rest © 2015. Alguns direitos reservados.</p>
+            <!--Mostra o ANO que está atuamente - ?php echo date("Y"); ? -->
+			<p><?php bloginfo('name'); ?> © <?php echo date("Y"); ?>. Alguns direitos reservados.</p>
 		</footer>
     <!-- Footer WordPress -->
     <?php wp_footer(); ?>
