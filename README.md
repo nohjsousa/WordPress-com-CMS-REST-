@@ -69,5 +69,8 @@ The_sub_field(‘nomedocampo’);
 
 <?php the_field('endereco_header', $contato); ?>
 <?php the_field('telefone_header', $contato); ?>
-?>
+
+#Terminar de adicionar os outros campos o CMS “contato”
+<?php echo date("Y"); ?> (Mostrar o ano que está atualmente nos direitos reservados “footer” )
+
 
