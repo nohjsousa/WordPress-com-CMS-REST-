@@ -61,4 +61,13 @@ Utilizando o Advanced Custom fields no wordPress
 The_sub_field(‘nomedocampo’);
 <?php endwhile; else : endif ?>
 
+#Pegar Valores de Outras Páginas
+<?php
+<!--Declaração de vareável -->
+<?php $contato = get_page_by_title('contato'); ?> 
+<!-- Fim de Declaração de vareável -->
+
+<?php the_field('endereco_header', $contato); ?>
+<?php the_field('telefone_header', $contato); ?>
+?>
 
