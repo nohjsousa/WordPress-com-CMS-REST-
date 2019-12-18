@@ -1,4 +1,4 @@
-# WordPress-com-CMS NO 
+# WordPress-com-CMS "Rest" 
 
 #Como instalar um templete no WordPress:
 	Pastas:
