@@ -10,20 +10,24 @@
         <?php wp_head(); ?>
 	    <!-- Fim do Header WordPress -->
     </head>
-
+	
+	<?php $_sobre = get_page_by_title('sobre'); ?>
 	<body>
-		
 		<header>
 			<nav>
 				<ul>
 					<li class="current_page_item"><a href="/">Menu</a></li>
-					<li><a href="/testewp.local/sobre">Sobre</a></li>
-					<li><a href="/testewp.local/contato">Contato</a></li>
+					<li><a href="/testewp/sobre/">Sobre</a></li>
+					<li><a href="/testewp/contato/">Contato</a></li>
 				</ul>
 			</nav>
 
 			<h1><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rest.png" alt="Rest"></h1>
-
-			<p>Rua Marechal 29 – Copacabana – Rj</p>
-			<p class="telefone">2422-9201</p>
-		</header>
+            <!--Declaração de vareável -->
+            <?php $contato = get_page_by_title('contato'); ?> 
+            <!-- Fim de Declaração de vareável -->
+            
+			<p><?php the_field('endereco_header', $contato); ?></p>
+			<p class="telefone"><?php the_field('telefone_header', $contato); ?></p>
+		</header> 
+        
