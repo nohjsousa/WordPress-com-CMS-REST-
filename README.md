@@ -77,3 +77,34 @@ The_sub_field(‘nomedocampo’);
 <title><?php bloginfo('name'); ?> - <?php wp_title(''); ?> <?php the_field('title_seo'); ?></title>
 <meta name="description" content="<?php bloginfo('name'); ?> - <?php wp_title(''); ?> <?php the_field('description_seo'); ?>">
 
+#Adicionar o Functions.php
+
+// Habilitar Menus
+add_theme_support('menus');
+
+// Funções para Limpar o Header
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'start_post_rel_link', 10, 0 );
+remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+remove_action('wp_head', 'feed_links_extra', 3 );
+remove_action('wp_head', 'wp_generator' );
+
+#Adicionar o Menu
+// Habilitar Menus
+add_theme_support('menus');
+
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
+//para adicionar o menu no head
+<?php
+	$args = array(
+		'menu' => 'principal',
+		'container' => false
+	);
+	wp_nav_menu( $args );
+?>
+
