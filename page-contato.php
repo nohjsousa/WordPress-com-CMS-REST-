@@ -12,7 +12,7 @@
 			</div>
             <?php if(have_rows('conteudo_contato')): while(have_rows('conteudo_contato')) : the_row(); ?>
                 <div class="grid-1-3 contato-item">
-                    <h2><?php the_sub_field('titulo_dados_contato'); ?></h2>
+                    <h2><?php the_sub_field('titulo_dados'); ?></h2>
                     <?php the_sub_field('informacao_dados'); ?>
                 </div>
             <?php endwhile; else :endif; ?>

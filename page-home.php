@@ -7,7 +7,7 @@
 			<h2 class="subtitulo"><?php the_title(); ?></h2>
             
             <?php if(have_rows('categoria_menu')): while(have_rows('categoria_menu')) : the_row(); ?>
-			     <div class="menu-item grid-8">
+			     <div class="menu-prato grid-8">
 				
                     <h2><?php the_sub_field('nome_categoria'); ?> </h2>
                     <ul>
