@@ -1,3 +1,4 @@
+#Para poder Visualizar a página será necessário instalar o servidor local e usar um Framework.
 # WordPress-com-CMS "Rest" 
 
 #Como instalar um templete no WordPress:
